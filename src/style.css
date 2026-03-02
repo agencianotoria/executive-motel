@@ -42,10 +42,55 @@ body {
 }
 
 .gold-gradient-btn {
-  background: linear-gradient(135deg, #c5a35d 0%, #f1e1c2 50%, #a68549 100%);
+  background: linear-gradient(135deg, 
+    #c5a35d 0%, 
+    #f1e1c2 50%, 
+    #a68549 100%
+  );
+  background-size: 200% 200%;
 }
 
-/* Filtro para o Mapa ficar sofisticado */
 iframe {
   filter: grayscale(1) invert(0.9) contrast(1.2);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.2s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#mobile-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all 0.7s ease-in-out;
+}
+
+body.menu-open #mobile-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+#menu-toggle {
+  z-index: 110;
+}
+
+body.menu-open .line-1 {
+  transform: translateY(4px) rotate(45deg);
+}
+
+body.menu-open .line-2 {
+  width: 100% !important;
+  transform: translateY(-3px) rotate(-45deg);
 }

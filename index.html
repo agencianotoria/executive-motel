@@ -2,262 +2,304 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Executive Motel | O seu momento de luxo em Salvador</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Executive Motel | O seu momento de luxo em Salvador</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="/src/style.css">
 </head>
 
 <body class="selection:bg-gold-executive selection:text-black">
 
-  <header class="fixed top-0 left-0 w-full z-50 py-8 border-b border-white/5 bg-black/40 backdrop-blur-md">
-    <div class="container mx-auto px-6 flex justify-between items-center">
-        
-        <nav class="hidden md:flex flex-1 gap-10 text-[10px] uppercase tracking-[0.4em] font-medium text-gray-400">
-            <a href="#diferenciais" class="hover:text-gold-executive transition-all duration-300">
-                Diferenciais
-            </a>
-            <a href="#suites" class="hover:text-gold-executive transition-all duration-300">
-                Suítes
-            </a>
-        </nav>
+	<header id="main-header"
+		class="fixed top-0 left-0 w-full z-[110] py-2 border-b border-white/5 bg-black/40 backdrop-blur-md transition-all duration-500">
+		<div class="container mx-auto px-6 flex justify-between items-center">
 
-        <div class="text-center group cursor-default px-8">
-            <span class="block text-2xl font-serif font-bold tracking-[0.25em] text-gold-executive uppercase leading-none">
-                Executive
-            </span>
-            <span class="block text-[9px] tracking-[0.7em] text-white/40 uppercase mt-1 group-hover:text-white transition-colors duration-500">
-                Motel
-            </span>
-        </div>
+			<nav class="hidden md:flex flex-1 gap-10 text-[12px] uppercase tracking-[0.4em] font-medium text-gray-400">
+				<a href="#diferenciais" class="hover:text-gold-executive transition-all duration-300">Diferenciais</a>
+				<a href="#suites" class="hover:text-gold-executive transition-all duration-300">Suítes</a>
+			</nav>
 
-        <nav class="hidden md:flex flex-1 justify-end gap-10 items-center">
-            <a href="#localizacao" class="text-[10px] uppercase tracking-[0.4em] font-medium text-gray-400 hover:text-gold-executive transition-all duration-300">
-                Localização
-            </a>
-            
-            <a href="https://www.google.com/maps" target="_blank" 
-               class="border border-gold-executive/30 px-6 py-2.5 text-[9px] uppercase tracking-[0.3em] font-semibold text-gold-executive hover:bg-gold-executive hover:text-black transition-all duration-500">
-                Como Chegar
-            </a>
-        </nav>
+			<div class="flex-1 md:flex-none flex justify-start md:justify-center items-center">
+				<a href="/" id="logo-container" aria-label="Página Inicial"
+					class="group relative block cursor-pointer w-[130px] md:w-[160px] h-[114px] md:h-[140px] transition-all duration-500">
 
-        <div class="md:hidden text-gold-executive text-xl">
-            <i class="fa-solid fa-bars-staggered"></i>
-        </div>
+					<img id="logo-large" src="/public/logo-executive-motel.webp" alt="Logotipo Executive Motel"
+						class="absolute inset-0 w-full h-full object-contain transition-all duration-300 ease-in-out opacity-100 scale-100 delay-0">
 
-    </div>
-</header>
+					<img id="logo-compact" src="/public/logo-simple-executive-motel.webp" alt="Logotipo Compacto"
+						class="absolute inset-0 w-full h-full object-contain transition-all duration-300 ease-in-out opacity-0 scale-90 delay-0">
+				</a>
+			</div>
 
-  <main>
-    <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-    
-    <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1590490359683-658d3d23f972?auto=format&fit=crop&q=80&w=1920" 
-             class="w-full h-full object-cover opacity-25 animate-subtle-zoom" alt="Executive Experience">
-        <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
-    </div>
+			<nav class="hidden md:flex flex-1 justify-end gap-10 items-center">
+				<a href="#localizacao"
+					class="text-[12px] uppercase tracking-[0.4em] font-medium text-gray-400 hover:text-gold-executive transition-all duration-300">Localização</a>
+				<a href="https://www.google.com/maps" target="_blank"
+					class="border border-gold-executive/30 px-6 py-2.5 text-[10px] uppercase tracking-[0.3em] font-semibold text-gold-executive hover:bg-gold-executive hover:text-black transition-all duration-500">Como
+					Chegar</a>
+			</nav>
 
-    <div class="container mx-auto px-6 relative z-10">
-        <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+			<button id="menu-toggle"
+				class="md:hidden relative z-[110] w-8 h-8 flex flex-col justify-center items-center gap-1.5 focus:outline-none"
+				aria-label="Abrir Menu">
+				<span class="line-1 w-full h-[1px] bg-gold-executive transition-all duration-500"></span>
+				<span class="line-2 w-3/4 h-[1px] bg-gold-executive self-end transition-all duration-500"></span>
+			</button>
 
-            <div class="flex items-center justify-center gap-4 mb-6 opacity-70">
-                <div class="h-px w-8 bg-gold-executive/50"></div>
-                <span class="text-gold-executive font-serif italic tracking-[0.4em] text-[10px] uppercase">
-                    Bem-vindo ao extraordinário
-                </span>
-                <div class="h-px w-8 bg-gold-executive/50"></div>
-            </div>
+		</div>
+	</header>
 
-            <h1 class="text-4xl md:text-7xl font-serif font-bold mb-6 leading-tight tracking-tight">
-                O seu momento de <br>
-                <span class="text-gold-metallic italic font-light">descanso</span> e intimidade.
-            </h1>
+	<div id="mobile-menu"
+		class="fixed top-0 left-0 w-full h-full z-[100] bg-black/95 backdrop-blur-xl flex flex-col items-center justify-center md:hidden">
+		<nav class="flex flex-col items-center gap-10">
+			<a href="#diferenciais" class="menu-link text-lg tracking-[0.5em] uppercase font-light">Diferenciais</a>
+			<a href="#suites" class="menu-link text-lg tracking-[0.5em] uppercase font-light">Suítes</a>
+			<a href="#localizacao" class="menu-link text-lg tracking-[0.5em] uppercase font-light">Localização</a>
 
-            <p class="font-sans text-gray-400 max-w-xl mx-auto mb-10 text-sm md:text-lg font-light tracking-wide leading-relaxed">
-                Padrão de luxo com o melhor custo-benefício de Salvador. <br class="hidden md:block">
-                Suítes modernas e discrição absoluta a poucos minutos do Aeroporto.
-            </p>
+			<div class="h-px w-12 bg-gold-executive/30 my-4"></div>
 
-            <div class="flex flex-col items-center gap-8">
-                
-                <a href="https://www.google.com/maps?q=Executive+Motel+Salvador" target="_blank" 
-                   class="group relative inline-flex items-center justify-center px-12 py-4 font-sans font-bold tracking-[0.3em] text-black uppercase transition-all duration-500 overflow-hidden shadow-xl">
-                    <div class="absolute inset-0 gold-gradient-btn transition-transform duration-500 group-hover:scale-110"></div>
-                    <span class="relative z-10 flex items-center gap-3 text-[10px]">
-                        Como chegar agora
-                        <i class="fa-solid fa-location-arrow text-[9px]"></i>
-                    </span>
-                </a>
+			<a href="https://www.google.com/maps" target="_blank"
+				class="text-gold-executive font-serif italic text-2xl tracking-widest">
+				Como Chegar
+			</a>
+		</nav>
+	</div>
 
-                <div class="flex items-center gap-4 group">
-                    <span class="font-sans text-[9px] uppercase tracking-[0.3em] text-white/30">Suítes a partir de</span>
-                    <span class="h-4 w-[1px] bg-gold-executive/30"></span>
-                    <span class="font-serif text-2xl text-gold-executive font-bold tracking-tight">R$ 89,90</span>
-                </div>
+	<main>
+		<section
+			class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden pt-32 md:pt-40">
 
-            </div>
-        </div>
-    </div>
+			<div class="absolute inset-0 z-0">
+				<img src="https://images.unsplash.com/photo-1590490359683-658d3d23f972?auto=format&fit=crop&q=80&w=1920"
+					class="w-full h-full object-cover opacity-25 animate-subtle-zoom" alt="Executive Experience">
+				<div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+			</div>
 
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-20">
-        <div class="w-px h-12 bg-gradient-to-b from-gold-executive to-transparent"></div>
-    </div>
-</section>
+			<div class="container mx-auto px-6 relative z-10">
+				<div class="max-w-4xl mx-auto text-center flex flex-col items-center">
 
-    <section id="diferenciais" class="py-24 bg-zinc-950">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Por que escolher o Executive?</h2>
-          <div class="h-1 w-20 bg-gold mx-auto"></div>
-        </div>
+					<div class="flex items-center justify-center gap-4 mb-6 opacity-70">
+						<div class="h-px w-8 bg-gold-executive/50"></div>
+						<span class="text-gold-executive font-serif italic tracking-[0.4em] text-[14px] uppercase">
+							Bem-vindo ao extraordinário
+						</span>
+						<div class="h-px w-8 bg-gold-executive/50"></div>
+					</div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
-            <i class="fa-solid fa-sparkles text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
-            <h3 class="text-xl font-bold mb-4 uppercase">Limpeza Padrão Ouro</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">Tecnologia de ozônio para garantir suítes 100% livres de
-              odores e microrganismos.</p>
-          </div>
-          <div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
-            <i class="fa-solid fa-location-dot text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
-            <h3 class="text-xl font-bold mb-4 uppercase">Localização Estratégica</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">Em São Cristóvão, rota perfeita perto do aeroporto e
-              principais vias.</p>
-          </div>
-          <div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
-            <i class="fa-solid fa-bed text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
-            <h3 class="text-xl font-bold mb-4 uppercase">Conforto Garantido</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">Ar potente, Smart TV, frigobar abastecido e enxoval
-              impecável.</p>
-          </div>
-          <div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
-            <i class="fa-solid fa-user-shield text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
-            <h3 class="text-xl font-bold mb-4 uppercase">Discrição Total</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">Entrada e saída rápidas com atendimento 24h e total
-              privacidade.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+					<h1 class="text-4xl md:text-7xl font-serif font-bold mb-6 leading-tight tracking-tight">
+						O seu momento de <br>
+						<span class="text-gold-metallic italic font-light">descanso</span> e intimidade.
+					</h1>
 
-    <section id="suites" class="py-24">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-          <div class="max-w-xl">
-            <h2 class="text-4xl font-serif font-bold mb-4 uppercase">Nossas Suítes</h2>
-            <p class="text-gray-400">São 21 opções de suítes preparadas para te receber. Da praticidade da suíte
-              executiva ao relaxamento das nossas unidades com hidromassagem.</p>
-          </div>
-        </div>
+					<p
+						class="font-sans text-gray-400 max-w-xl mx-auto mb-10 text-sm md:text-lg font-light tracking-wide leading-relaxed">
+						Alto padrão com o melhor custo-benefício de Salvador. <br class="hidden md:block">
+						Suítes modernas e discrição absoluta a poucos minutos do Aeroporto.
+					</p>
 
-        <div class="grid md:grid-cols-2 gap-12">
-          <div class="group overflow-hidden border border-white/10">
-            <div class="relative overflow-hidden h-80">
-              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&q=80&w=800"
-                alt="Suíte Standard" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-              <div
-                class="absolute top-4 left-4 bg-black/80 px-4 py-1 text-gold text-xs font-bold uppercase tracking-widest">
-                Essencial</div>
-            </div>
-            <div class="p-8 bg-zinc-950">
-              <h3 class="text-2xl font-serif font-bold mb-2">Suítes Standard</h3>
-              <p class="text-gray-400 mb-4">O essencial bem feito. Conforto, climatização e o melhor preço justo da
-                região.</p>
-              <span class="text-gold font-bold">A partir de R$ 89,90</span>
-            </div>
-          </div>
+					<div class="flex flex-col items-center gap-8">
 
-          <div class="group overflow-hidden border border-white/10">
-            <div class="relative overflow-hidden h-80">
-              <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800"
-                alt="Suíte com Hidro" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-              <div
-                class="absolute top-4 left-4 bg-black/80 px-4 py-1 text-gold text-xs font-bold uppercase tracking-widest">
-                Premium</div>
-            </div>
-            <div class="p-8 bg-zinc-950">
-              <h3 class="text-2xl font-serif font-bold mb-2">Suítes com Hidro</h3>
-              <p class="text-gray-400 mb-4">Para quem quer esticar o tempo e relaxar de verdade em uma hidromassagem
-                impecável.</p>
-              <span class="text-gold font-bold">A partir de R$ 129,90</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+						<a href="https://www.google.com/maps?q=Executive+Motel+Salvador" target="_blank"
+							class="group relative inline-flex items-center justify-center px-10 py-4 overflow-hidden shadow-2xl transition-transform duration-500 active:scale-95">
 
-    <section class="py-24 bg-zinc-950 border-y border-white/5">
-      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
-        <div>
-          <i class="fa-solid fa-calendar-xmark text-2xl text-gold mb-4"></i>
-          <h4 class="font-bold mb-2 uppercase tracking-widest">Sem Burocracia</h4>
-          <p class="text-sm text-gray-400">Não trabalhamos com reservas. É só chegar e escolher sua suíte disponível.
-          </p>
-        </div>
-        <div>
-          <i class="fa-solid fa-moon text-2xl text-gold mb-4"></i>
-          <h4 class="font-bold mb-2 uppercase tracking-widest">Pernoite</h4>
-          <p class="text-sm text-gray-400">Disponível das 21h às 10h. Ideal para repouso tranquilo antes de viajar.</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-clock text-2xl text-gold mb-4"></i>
-          <h4 class="font-bold mb-2 uppercase tracking-widest">Atendimento 24h</h4>
-          <p class="text-sm text-gray-400">Nossa equipe está sempre pronta para te receber a qualquer hora.</p>
-        </div>
-      </div>
-    </section>
+							<div
+								class="absolute inset-0 gold-gradient-btn transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-110 transform-gpu">
+							</div>
 
-    <section id="localizacao" class="py-24">
-      <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-4xl font-serif font-bold mb-6 uppercase">Onde Estamos</h2>
-            <p class="text-lg text-gold mb-4">Rua Boquira, N° 2 - São Cristóvão.</p>
-            <p class="text-gray-400 mb-8 leading-relaxed">
-              Estamos localizados estrategicamente em frente ao Aeroporto de Salvador e ao lado do Salvador Norte
-              Shopping. Facilidade de acesso pelas principais vias da cidade.
-            </p>
-            <a href="https://www.google.com/maps" target="_blank"
-              class="inline-block border border-gold text-gold py-4 px-8 font-bold uppercase tracking-widest hover:bg-gold hover:text-black transition">
-              Abrir no GPS
-            </a>
-          </div>
-          <div class="h-[400px] border border-white/10">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.3364811808084!2d-38.3368!3d-12.9061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU0JzIyLjAiUyAzOMKwMjAnMTIuNSJX!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-              class="grayscale contrast-125">
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+							<span
+								class="relative z-10 flex items-center gap-3 font-sans text-[11px] font-bold uppercase tracking-[0.3em] text-black">
+								Como chegar agora
+								<i
+									class="fa-solid fa-location-arrow text-[10px] transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+							</span>
+						</a>
 
-  <footer class="bg-black py-16 border-t border-white/10">
-    <div class="container mx-auto px-6 text-center">
-      <div class="text-2xl font-serif font-bold text-gold uppercase mb-6">Executive Motel</div>
-      <p class="text-gray-500 text-sm mb-8 tracking-[0.2em] uppercase">5 anos de confiança e discrição</p>
+						<div class="flex items-center gap-4 group">
+							<span class="font-sans text-[12px] uppercase tracking-[0.3em] text-white/30">Suítes a partir
+								de</span>
+							<span class="h-4 w-[1px] bg-gold-executive/30"></span>
+							<span class="font-serif text-2xl text-gold-executive font-bold tracking-tight">R$
+								89,90</span>
+						</div>
 
-      <div class="flex justify-center gap-6 mb-12">
-        <a href="#" class="text-2xl hover:text-gold transition"><i class="fa-brands fa-instagram"></i></a>
-        <span class="text-gray-600">@driveinboxexecutive</span>
-      </div>
+					</div>
+				</div>
+			</div>
 
-      <div class="text-gray-600 text-xs uppercase tracking-widest border-t border-white/5 pt-8">
-        Rua Boquira, N°2 - São Cristóvão, Salvador/BA. <br>
-        © 2024 Executive Motel - Todos os direitos reservados.
-      </div>
-    </div>
-  </footer>
+			<div class="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-20">
+				<div class="w-px h-12 bg-gradient-to-b from-gold-executive to-transparent"></div>
+			</div>
+		</section>
 
-  
+		<section id="diferenciais" class="py-24 bg-zinc-950">
+			<div class="container mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Por que escolher o Executive?</h2>
+					<div class="h-1 w-20 bg-gold mx-auto"></div>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
+						<i class="fa-solid fa-sparkles text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
+						<h3 class="text-xl font-bold mb-4 uppercase">Limpeza Padrão Ouro</h3>
+						<p class="text-gray-400 text-sm leading-relaxed">Tecnologia de ozônio para garantir suítes 100%
+							livres de
+							odores e microrganismos.</p>
+					</div>
+					<div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
+						<i
+							class="fa-solid fa-location-dot text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
+						<h3 class="text-xl font-bold mb-4 uppercase">Localização Estratégica</h3>
+						<p class="text-gray-400 text-sm leading-relaxed">Em São Cristóvão, rota perfeita perto do
+							aeroporto e
+							principais vias.</p>
+					</div>
+					<div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
+						<i class="fa-solid fa-bed text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
+						<h3 class="text-xl font-bold mb-4 uppercase">Conforto Garantido</h3>
+						<p class="text-gray-400 text-sm leading-relaxed">Ar potente, Smart TV, frigobar abastecido e
+							enxoval
+							impecável.</p>
+					</div>
+					<div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
+						<i class="fa-solid fa-user-shield text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
+						<h3 class="text-xl font-bold mb-4 uppercase">Discrição Total</h3>
+						<p class="text-gray-400 text-sm leading-relaxed">Entrada e saída rápidas com atendimento 24h e
+							total
+							privacidade.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="suites" class="py-24">
+			<div class="container mx-auto px-6">
+				<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+					<div class="max-w-xl">
+						<h2 class="text-4xl font-serif font-bold mb-4 uppercase">Nossas Suítes</h2>
+						<p class="text-gray-400">São 21 opções de suítes preparadas para te receber. Da praticidade da
+							suíte
+							executiva ao relaxamento das nossas unidades com hidromassagem.</p>
+					</div>
+				</div>
+
+				<div class="grid md:grid-cols-2 gap-12">
+					<div class="group overflow-hidden border border-white/10">
+						<div class="relative overflow-hidden h-80">
+							<img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&q=80&w=800"
+								alt="Suíte Standard"
+								class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+							<div
+								class="absolute top-4 left-4 bg-black/80 px-4 py-1 text-gold text-xs font-bold uppercase tracking-widest">
+								Essencial</div>
+						</div>
+						<div class="p-8 bg-zinc-950">
+							<h3 class="text-2xl font-serif font-bold mb-2">Suítes Standard</h3>
+							<p class="text-gray-400 mb-4">O essencial bem feito. Conforto, climatização e o melhor preço
+								justo da
+								região.</p>
+							<span class="text-gold font-bold">A partir de R$ 89,90</span>
+						</div>
+					</div>
+
+					<div class="group overflow-hidden border border-white/10">
+						<div class="relative overflow-hidden h-80">
+							<img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800"
+								alt="Suíte com Hidro"
+								class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+							<div
+								class="absolute top-4 left-4 bg-black/80 px-4 py-1 text-gold text-xs font-bold uppercase tracking-widest">
+								Premium</div>
+						</div>
+						<div class="p-8 bg-zinc-950">
+							<h3 class="text-2xl font-serif font-bold mb-2">Suítes com Hidro</h3>
+							<p class="text-gray-400 mb-4">Para quem quer esticar o tempo e relaxar de verdade em uma
+								hidromassagem
+								impecável.</p>
+							<span class="text-gold font-bold">A partir de R$ 129,90</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-24 bg-zinc-950 border-y border-white/5">
+			<div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+				<div>
+					<i class="fa-solid fa-calendar-xmark text-2xl text-gold mb-4"></i>
+					<h4 class="font-bold mb-2 uppercase tracking-widest">Sem Burocracia</h4>
+					<p class="text-sm text-gray-400">Não trabalhamos com reservas. É só chegar e escolher sua suíte
+						disponível.
+					</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-moon text-2xl text-gold mb-4"></i>
+					<h4 class="font-bold mb-2 uppercase tracking-widest">Pernoite</h4>
+					<p class="text-sm text-gray-400">Disponível das 21h às 10h. Ideal para repouso tranquilo antes de
+						viajar.</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-clock text-2xl text-gold mb-4"></i>
+					<h4 class="font-bold mb-2 uppercase tracking-widest">Atendimento 24h</h4>
+					<p class="text-sm text-gray-400">Nossa equipe está sempre pronta para te receber a qualquer hora.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="localizacao" class="py-24">
+			<div class="container mx-auto px-6">
+				<div class="grid md:grid-cols-2 gap-12 items-center">
+					<div>
+						<h2 class="text-4xl font-serif font-bold mb-6 uppercase">Onde Estamos</h2>
+						<p class="text-lg text-gold mb-4">Rua Boquira, N° 2 - São Cristóvão.</p>
+						<p class="text-gray-400 mb-8 leading-relaxed">
+							Estamos localizados estrategicamente em frente ao Aeroporto de Salvador e ao lado do
+							Salvador Norte
+							Shopping. Facilidade de acesso pelas principais vias da cidade.
+						</p>
+						<a href="https://www.google.com/maps" target="_blank"
+							class="inline-block border border-gold text-gold py-4 px-8 font-bold uppercase tracking-widest hover:bg-gold hover:text-black transition">
+							Abrir no GPS
+						</a>
+					</div>
+					<div class="h-[400px] border border-white/10">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.3364811808084!2d-38.3368!3d-12.9061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU0JzIyLjAiUyAzOMKwMjAnMTIuNSJX!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
+							width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+							class="grayscale contrast-125">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="bg-black py-16 border-t border-white/10">
+		<div class="container mx-auto px-6 text-center">
+			<div class="text-2xl font-serif font-bold text-gold uppercase mb-6">Executive Motel</div>
+			<p class="text-gray-500 text-sm mb-8 tracking-[0.2em] uppercase">5 anos de confiança e discrição</p>
+
+			<div class="flex justify-center gap-6 mb-12">
+				<a href="#" class="text-2xl hover:text-gold transition"><i class="fa-brands fa-instagram"></i></a>
+				<span class="text-gray-600">@driveinboxexecutive</span>
+			</div>
+
+			<div class="text-gray-600 text-xs uppercase tracking-widest border-t border-white/5 pt-8">
+				Rua Boquira, N°2 - São Cristóvão, Salvador/BA. <br>
+				© 2024 Executive Motel - Todos os direitos reservados.
+			</div>
+		</div>
+	</footer>
+
+	<script type="module" src="/src/main.js"></script>
+
 </body>
 
 </html>
