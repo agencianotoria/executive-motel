@@ -29,10 +29,10 @@
 				<a href="/" id="logo-container" aria-label="Página Inicial"
 					class="group relative block cursor-pointer w-[130px] md:w-[160px] h-[114px] md:h-[140px] transition-all duration-500">
 
-					<img id="logo-large" src="/public/logo-executive-motel.webp" alt="Logotipo Executive Motel"
+					<img id="logo-large" src="/logo-executive-motel.webp" alt="Logotipo Executive Motel"
 						class="absolute inset-0 w-full h-full object-contain transition-all duration-300 ease-in-out opacity-100 scale-100 delay-0">
 
-					<img id="logo-compact" src="/public/logo-simple-executive-motel.webp" alt="Logotipo Compacto"
+					<img id="logo-compact" src="/logo-simple-executive-motel.webp" alt="Logotipo Compacto"
 						class="absolute inset-0 w-full h-full object-contain transition-all duration-300 ease-in-out opacity-0 scale-90 delay-0">
 				</a>
 			</div>
@@ -85,11 +85,12 @@
 				<div class="max-w-4xl mx-auto text-center flex flex-col items-center">
 
 					<div class="flex items-center justify-center gap-4 mb-6 opacity-70">
-						<div class="h-px w-8 bg-gold-executive/50"></div>
-						<span class="text-gold-executive font-serif italic tracking-[0.4em] text-[14px] uppercase">
+						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
+						<span
+							class="text-[var(--color-gold-light-2)] font-serif italic tracking-[0.3em] text-[16px] uppercase">
 							Bem-vindo ao extraordinário
 						</span>
-						<div class="h-px w-8 bg-gold-executive/50"></div>
+						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
 					</div>
 
 					<h1 class="text-4xl md:text-7xl font-serif font-bold mb-6 leading-tight tracking-tight">
@@ -121,7 +122,8 @@
 						</a>
 
 						<div class="flex items-center gap-4 group">
-							<span class="font-sans text-[12px] uppercase tracking-[0.3em] text-white/30">Suítes a partir
+							<span class="font-sans text-[12px] uppercase tracking-[0.3em] text-white/30 mt-1">Suítes a
+								partir
 								de</span>
 							<span class="h-4 w-[1px] bg-gold-executive/30"></span>
 							<span class="font-serif text-2xl text-gold-executive font-bold tracking-tight">R$
@@ -137,95 +139,251 @@
 			</div>
 		</section>
 
-		<section id="diferenciais" class="py-24 bg-zinc-950">
-			<div class="container mx-auto px-6">
-				<div class="text-center mb-16">
-					<h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Por que escolher o Executive?</h2>
-					<div class="h-1 w-20 bg-gold mx-auto"></div>
+		<section id="diferenciais" class="py-32 bg-zinc-950 relative overflow-hidden">
+			<div
+				class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold-executive/5 blur-[120px] rounded-full pointer-events-none">
+			</div>
+
+			<div class="container mx-auto px-6 relative z-10">
+
+				<div class="text-center mb-20">
+					<div class="flex items-center justify-center gap-4 mb-4 opacity-60">
+						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
+						<span
+							class="text-[var(--color-gold-light-2)] font-serif italic tracking-[0.3em] text-[16px] uppercase">O
+							que nos torna únicos</span>
+						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
+					</div>
+					<h2 class="text-3xl md:text-5xl font-serif font-bold text-white tracking-wide">
+						Por que escolher o <span class="text-gold-metallic">Executive?</span>
+					</h2>
 				</div>
 
-				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-					<div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
-						<i class="fa-solid fa-sparkles text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
-						<h3 class="text-xl font-bold mb-4 uppercase">Limpeza Padrão Ouro</h3>
-						<p class="text-gray-400 text-sm leading-relaxed">Tecnologia de ozônio para garantir suítes 100%
-							livres de
-							odores e microrganismos.</p>
+				<div
+					class="w-full grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-gold-executive/20 border border-gold-executive/20 shadow-2xl">
+
+					<div
+						class="bg-[#0a0a0a] p-10 flex flex-col items-center text-center group hover:bg-[#0f0f0f] transition-colors duration-500">
+						<div class="mb-8 relative">
+							<i
+								class="fa-solid fa-wind text-4xl text-gold-executive transform transition-transform duration-500 group-hover:scale-110"></i>
+							<div
+								class="absolute -inset-4 bg-gold-executive/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+							</div>
+						</div>
+						<h3 class="font-serif text-lg font-bold mb-4 uppercase tracking-[0.15em] text-white">Limpeza
+							Ouro</h3>
+						<p class="text-gray-400 text-[16px] leading-relaxed font-light tracking-wide">
+							Tecnologia de <span class="text-gold-executive font-medium">máquina de ozônio</span>. Suítes
+							100% livres de odores e microrganismos.
+						</p>
 					</div>
-					<div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
-						<i
-							class="fa-solid fa-location-dot text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
-						<h3 class="text-xl font-bold mb-4 uppercase">Localização Estratégica</h3>
-						<p class="text-gray-400 text-sm leading-relaxed">Em São Cristóvão, rota perfeita perto do
-							aeroporto e
-							principais vias.</p>
+
+					<div
+						class="bg-[#0a0a0a] p-10 flex flex-col items-center text-center group hover:bg-[#0f0f0f] transition-colors duration-500">
+						<div class="mb-8 relative">
+							<i
+								class="fa-solid fa-location-crosshairs text-4xl text-gold-executive transform transition-transform duration-500 group-hover:scale-110"></i>
+							<div
+								class="absolute -inset-4 bg-gold-executive/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+							</div>
+						</div>
+						<h3 class="font-serif text-lg font-bold mb-4 uppercase tracking-[0.15em] text-white">Rota
+							Perfeita</h3>
+						<p class="text-gray-400 text-[16px] leading-relaxed font-light tracking-wide">
+							Em São Cristóvão, na rota ideal para quem busca praticidade perto do <span
+								class="text-gold-executive font-medium">aeroporto</span>.
+						</p>
 					</div>
-					<div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
-						<i class="fa-solid fa-bed text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
-						<h3 class="text-xl font-bold mb-4 uppercase">Conforto Garantido</h3>
-						<p class="text-gray-400 text-sm leading-relaxed">Ar potente, Smart TV, frigobar abastecido e
-							enxoval
-							impecável.</p>
+
+					<div
+						class="bg-[#0a0a0a] p-10 flex flex-col items-center text-center group hover:bg-[#0f0f0f] transition-colors duration-500">
+						<div class="mb-8 relative">
+							<i
+								class="fa-solid fa-bed text-4xl text-gold-executive transform transition-transform duration-500 group-hover:scale-110"></i>
+							<div
+								class="absolute -inset-4 bg-gold-executive/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+							</div>
+						</div>
+						<h3 class="font-serif text-lg font-bold mb-4 uppercase tracking-[0.15em] text-white">Conforto
+							Total</h3>
+						<p class="text-gray-400 text-[16px] leading-relaxed font-light tracking-wide">
+							Ar-condicionado potente, Smart TV para streamings e <span
+								class="text-gold-executive font-medium">enxoval impecável</span>.
+						</p>
 					</div>
-					<div class="p-8 border border-white/5 hover:border-gold/30 transition bg-black/20 group">
-						<i class="fa-solid fa-user-shield text-3xl text-gold mb-6 group-hover:scale-110 transition"></i>
-						<h3 class="text-xl font-bold mb-4 uppercase">Discrição Total</h3>
-						<p class="text-gray-400 text-sm leading-relaxed">Entrada e saída rápidas com atendimento 24h e
-							total
-							privacidade.</p>
+
+					<div
+						class="bg-[#0a0a0a] p-10 flex flex-col items-center text-center group hover:bg-[#0f0f0f] transition-colors duration-500">
+						<div class="mb-8 relative">
+							<i
+								class="fa-solid fa-user-shield text-4xl text-gold-executive transform transition-transform duration-500 group-hover:scale-110"></i>
+							<div
+								class="absolute -inset-4 bg-gold-executive/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+							</div>
+						</div>
+						<h3 class="font-serif text-lg font-bold mb-4 uppercase tracking-[0.15em] text-white">Discrição
+							24h</h3>
+						<p class="text-gray-400 text-[16px] leading-relaxed font-light tracking-wide">
+							Entrada rápida, atendimento 24h e <span class="text-gold-executive font-medium">total
+								privacidade</span> para a sua estadia.
+						</p>
 					</div>
+
 				</div>
 			</div>
 		</section>
 
-		<section id="suites" class="py-24">
-			<div class="container mx-auto px-6">
-				<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-					<div class="max-w-xl">
-						<h2 class="text-4xl font-serif font-bold mb-4 uppercase">Nossas Suítes</h2>
-						<p class="text-gray-400">São 21 opções de suítes preparadas para te receber. Da praticidade da
-							suíte
-							executiva ao relaxamento das nossas unidades com hidromassagem.</p>
+		<section id="precos" class="py-32 bg-zinc-950 relative overflow-hidden">
+			<div
+				class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-executive/40 to-transparent">
+			</div>
+			<div
+				class="absolute top-1/2 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gold-executive/5 blur-[150px] rounded-full pointer-events-none">
+			</div>
+
+			<div class="container mx-auto px-6 relative z-10">
+
+				<div class="text-center mb-24">
+					<div class="flex items-center justify-center gap-4 mb-4 opacity-70">
+						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
+						<span
+							class="text-[var(--color-gold-light-2)] font-serif italic tracking-[0.3em] text-[16px] uppercase">
+							Escolha sua Estadía
+						</span>
+						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
 					</div>
+					<h2 class="text-4xl md:text-6xl font-serif font-bold text-white tracking-wide">
+						<span class="text-gold-metallic">Preços</span> Exclusive
+					</h2>
+					<p class="text-gray-400 mt-6 font-serif text-lg opacity-80">Nossos valores e modalidades de
+						hospedagem</p>
 				</div>
 
-				<div class="grid md:grid-cols-2 gap-12">
-					<div class="group overflow-hidden border border-white/10">
-						<div class="relative overflow-hidden h-80">
-							<img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&q=80&w=800"
-								alt="Suíte Standard"
-								class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+				<div
+					class="w-full border border-gold-executive/30 bg-[#0a0a0a] shadow-[0_0_60px_rgba(187,152,80,0.1)] overflow-x-auto">
+
+					<div class="min-w-[800px]">
+
+						<div
+							class="grid grid-cols-5 border-b border-gold-executive/30 font-sans text-[12px] uppercase tracking-[0.2em] text-gold-light">
 							<div
-								class="absolute top-4 left-4 bg-black/80 px-4 py-1 text-gold text-xs font-bold uppercase tracking-widest">
-								Essencial</div>
+								class="p-6 border-r border-gold-executive/30 font-semibold flex items-center justify-center text-center">
+								Suítes
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/30 font-semibold flex items-center justify-center text-center">
+								2 Horas
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/30 font-semibold flex items-center justify-center text-center">
+								4 Horas
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/30 font-semibold flex items-center justify-center text-center">
+								Pernoite
+							</div>
+							<div class="p-6 font-semibold flex items-center justify-center text-center">
+								Hora Adicional
+							</div>
 						</div>
-						<div class="p-8 bg-zinc-950">
-							<h3 class="text-2xl font-serif font-bold mb-2">Suítes Standard</h3>
-							<p class="text-gray-400 mb-4">O essencial bem feito. Conforto, climatização e o melhor preço
-								justo da
-								região.</p>
-							<span class="text-gold font-bold">A partir de R$ 89,90</span>
+
+						<div
+							class="grid grid-cols-5 border-b border-gold-executive/15 hover:bg-gold-executive/5 transition-colors group">
+							<div
+								class="p-6 border-r border-gold-executive/15 font-serif text-lg text-white group-hover:text-gold-light flex items-center justify-center text-center transition-colors">
+								Suíte Luxo
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 89,90
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 109,90
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 129,90
+							</div>
+							<div
+								class="p-6 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 25,00
+							</div>
+						</div>
+
+						<div
+							class="grid grid-cols-5 border-b border-gold-executive/15 hover:bg-gold-executive/5 transition-colors group">
+							<div
+								class="p-6 border-r border-gold-executive/15 font-serif text-lg text-white group-hover:text-gold-light flex items-center justify-center text-center transition-colors">
+								Suíte com Hidro
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 129,90
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 149,90
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 169,90
+							</div>
+							<div
+								class="p-6 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 39,00
+							</div>
+						</div>
+
+						<div
+							class="grid grid-cols-5 border-b border-gold-executive/30 hover:bg-gold-executive/5 transition-colors group">
+							<div
+								class="p-6 border-r border-gold-executive/15 font-serif text-lg text-white group-hover:text-gold-light flex items-center justify-center text-center transition-colors">
+								Suíte Executive
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 149,90
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 169,90
+							</div>
+							<div
+								class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 189,90
+							</div>
+							<div
+								class="p-6 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center transition-colors">
+								R$ 49,00
+							</div>
+						</div>
+
+					</div>
+
+					<div class="bg-[#0f0f0f] px-10 py-8 flex items-center justify-center">
+						<div class="flex items-center gap-6">
+							<i class="fa-regular fa-clock text-4xl text-gold-executive"></i>
+
+							<div class="flex flex-col text-center md:text-left">
+								<div class="flex items-center justify-center md:justify-start gap-4">
+									<span
+										class="text-xl md:text-2xl font-serif tracking-[0.2em] text-white uppercase leading-none">Pernoite</span>
+								</div>
+								<span
+									class="text-gold-executive font-serif text-[18px] tracking-wide leading-none mt-0 pt-1">Das
+									21h às 10h</span>
+							</div>
 						</div>
 					</div>
 
-					<div class="group overflow-hidden border border-white/10">
-						<div class="relative overflow-hidden h-80">
-							<img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800"
-								alt="Suíte com Hidro"
-								class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-							<div
-								class="absolute top-4 left-4 bg-black/80 px-4 py-1 text-gold text-xs font-bold uppercase tracking-widest">
-								Premium</div>
-						</div>
-						<div class="p-8 bg-zinc-950">
-							<h3 class="text-2xl font-serif font-bold mb-2">Suítes com Hidro</h3>
-							<p class="text-gray-400 mb-4">Para quem quer esticar o tempo e relaxar de verdade em uma
-								hidromassagem
-								impecável.</p>
-							<span class="text-gold font-bold">A partir de R$ 129,90</span>
-						</div>
-					</div>
 				</div>
+
+				<div class="text-center mt-12 text-[16px] text-gray-600 uppercase tracking-widest leading-relaxed">
+					Consulte Condições Adicionais.<br>Preços sujeitos a alterações sem aviso prévio.
+				</div>
+
 			</div>
 		</section>
 
