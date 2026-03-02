@@ -52,37 +52,57 @@ const initHeaderScroll = () => {
 const initMobileMenu = () => {
     const toggleBtn = document.getElementById('menu-toggle');
     const body = document.body;
-    const header = document.querySelector('header');
+    const header = document.getElementById('main-header');
     const menuLinks = document.querySelectorAll('.menu-link');
+
+    const line1 = toggleBtn?.querySelector('.line-1');
+    const line2 = toggleBtn?.querySelector('.line-2');
+    const line3 = toggleBtn?.querySelector('.line-3');
 
     const getScrollbarWidth = () => {
         return window.innerWidth - document.documentElement.clientWidth;
     };
 
+    const toggleIcon = (isOpen) => {
+        if (isOpen) {
+            line2?.classList.add('opacity-0', 'scale-x-0');
+            line1?.classList.add('translate-y-[7px]', 'rotate-45');
+            line3?.classList.add('-translate-y-[7px]', '-rotate-45');
+        } else {
+            line2?.classList.remove('opacity-0', 'scale-x-0');
+            line1?.classList.remove('translate-y-[7px]', 'rotate-45');
+            line3?.classList.remove('-translate-y-[7px]', '-rotate-45');
+        }
+    };
+
     if (toggleBtn) {
         toggleBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-
             const isOpening = !body.classList.contains('menu-open');
-            const scrollbarWidth = getScrollbarWidth();
+            const scrollWidth = getScrollbarWidth();
 
             if (isOpening) {
-                body.style.paddingRight = `${scrollbarWidth}px`;
-                header.style.paddingRight = `${scrollbarWidth}px`;
+                if (scrollWidth > 0) {
+                    body.style.paddingRight = `${scrollWidth}px`;
+                    header.style.paddingRight = `${scrollWidth}px`;
+                }
                 body.classList.add('menu-open');
+                toggleIcon(true);
             } else {
-                body.style.paddingRight = '0px';
-                header.style.paddingRight = '0px';
                 body.classList.remove('menu-open');
+                body.style.paddingRight = '';
+                header.style.paddingRight = '';
+                toggleIcon(false);
             }
         });
     }
 
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
-            body.style.paddingRight = '0px';
-            header.style.paddingRight = '0px';
             body.classList.remove('menu-open');
+            body.style.paddingRight = '';
+            header.style.paddingRight = '';
+            toggleIcon(false);
         });
     });
 };

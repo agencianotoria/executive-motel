@@ -1,5 +1,45 @@
 @import "tailwindcss";
 
+@font-face {
+  font-display: swap;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/playfair-display-v40-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/playfair-display-v40-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/montserrat-v31-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/montserrat-v31-latin-600.woff2') format('woff2');
+}
+
 @theme {
     --color-gold-executive: #BB9850;
     --color-gold-light: #FCE7A3;
@@ -86,13 +126,4 @@ body.menu-open {
 
 #menu-toggle {
     z-index: 110;
-}
-
-body.menu-open .line-1 {
-    transform: translateY(4px) rotate(45deg);
-}
-
-body.menu-open .line-2 {
-    width: 100% !important;
-    transform: translateY(-3px) rotate(-45deg);
 }
