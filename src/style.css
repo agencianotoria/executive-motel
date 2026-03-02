@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+@theme {
+  --color-gold-executive: #c5a35d;
+  --color-gold-light: #e8d5a1;
+  --color-rich-black: #050505;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  --animate-subtle-zoom: subtle-zoom 30s infinite alternate;
+}
+
+@keyframes subtle-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+/* Base e Utilidades Customizadas */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-rich-black);
+  color: #ffffff;
+  font-family: var(--font-sans);
+}
+
+.text-gold-metallic {
+  background: linear-gradient(
+    to bottom,
+    #f1e1c2 0%, 
+    #c5a35d 22%, 
+    #b8860b 50%, 
+    #e8d5a1 78%, 
+    #c5a35d 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #c5a35d 0%, #f1e1c2 50%, #a68549 100%);
+}
+
+/* Filtro para o Mapa ficar sofisticado */
+iframe {
+  filter: grayscale(1) invert(0.9) contrast(1.2);
+}
