@@ -123,3 +123,22 @@ body.menu-open {
 #menu-toggle {
     z-index: 110;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(187, 152, 80, 0.3); 
+    border-radius: 0px;
+    border: 1px solid rgba(187, 152, 80, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #BB9850; 
+    box-shadow: 0 0 10px rgba(187, 152, 80, 0.4);
+}
