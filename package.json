@@ -2,7 +2,6 @@
   "name": "executive-motel",
   "private": true,
   "version": "1.0.0",
-  "description": "Landing Page de alto padrão para o Executive Motel",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +10,15 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
     "tailwindcss": "^4.2.1",
     "vite": "^7.3.1"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
 }
