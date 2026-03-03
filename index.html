@@ -3,11 +3,38 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Executive Motel - O seu momento de luxo em Salvador</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+	<title>Executive Motel - Privacidade e Conforto em Salvador</title>
+	<meta name="description"
+		content="O melhor motel em Salvador próximo ao aeroporto. Suítes modernas com hidro, limpeza com ozônio e discrição absoluta. Conheça o Executive Motel.">
+	<meta name="keywords"
+		content="motel salvador, motel aeroporto salvador, suite com hidro salvador, motel jardim das margaridas, executive motel salvador">
+	<link rel="canonical" href="https://www.executivemotel.com.br/">
+	<meta name="robots" content="index, follow">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.executivemotel.com.br/">
+	<meta property="og:title" content="Executive Motel - O seu momento de luxo em Salvador">
+	<meta property="og:description"
+		content="Suítes modernas e discrição absoluta a poucos minutos do Aeroporto de Salvador.">
+	<meta property="og:image" content="https://www.executivemotel.com.br/og-image.jpg">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://www.executivemotel.com.br/">
+	<meta property="twitter:title" content="Executive Motel | Luxo em Salvador">
+	<meta property="twitter:description" content="Suítes modernas e discrição absoluta perto do aeroporto.">
+	<meta property="twitter:image" content="https://www.executivemotel.com.br/og-image.jpg">
+
+	<link rel="preload" href="/fonts/playfair-display-v40-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/playfair-display-v40-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/montserrat-v31-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/banner-hero.webp" as="image" type="image/webp">
+	<link rel="preload" href="/logo-executive-motel.webp" as="image" type="image/webp">
+
 	<link rel="icon" type="image/png" href="/favicon.png">
+	<meta name="theme-color" content="#050505">
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="preconnect" href="https://maps.googleapis.com">
 </head>
 
 <body class="selection:bg-gold-executive selection:text-black">
@@ -17,8 +44,10 @@
 		<div class="container mx-auto px-6 flex justify-between items-center">
 
 			<nav class="hidden md:flex flex-1 gap-10 text-[12px] uppercase tracking-[0.4em] font-medium text-gray-400">
-				<a href="#diferenciais" class="hover:text-gold-executive transition-all duration-300">Diferenciais</a>
-				<a href="#tarifas" class="hover:text-gold-executive transition-all duration-300">Tarifas</a>
+				<a href="#diferenciais"
+					class="hover:text-gold-executive transition-all duration-300 active:scale-95">Diferenciais</a>
+				<a href="#tarifas"
+					class="hover:text-gold-executive transition-all duration-300 active:scale-95">Tarifas</a>
 			</nav>
 
 			<div class="flex-1 md:flex-none flex justify-start md:justify-center items-center">
@@ -35,14 +64,14 @@
 
 			<nav class="hidden md:flex flex-1 justify-end gap-10 items-center">
 				<a href="#localizacao"
-					class="text-[12px] uppercase tracking-[0.4em] font-medium text-gray-400 hover:text-gold-executive transition-all duration-300">Localização</a>
-				<a href="https://maps.app.goo.gl/i47vkWEp9cX73JQBA" target="_blank"
-					class="border border-gold-executive/30 px-6 py-2.5 text-[10px] uppercase tracking-[0.3em] font-semibold text-gold-executive hover:bg-gold-executive hover:text-black transition-all duration-500">Como
+					class="text-[12px] uppercase tracking-[0.4em] font-medium text-gray-400 hover:text-gold-executive transition-all duration-300 active:scale-95">Localização</a>
+				<a href="https://maps.app.goo.gl/i47vkWEp9cX73JQBA" target="_blank" rel="noopener noreferrer"
+					class="border border-gold-executive/30 px-6 py-2.5 text-[10px] uppercase tracking-[0.3em] font-semibold text-gold-executive hover:bg-gold-executive hover:text-black transition-all active:scale-95 duration-500">Como
 					Chegar</a>
 			</nav>
 
 			<button id="menu-toggle"
-				class="md:hidden relative z-[110] w-8 h-8 flex flex-col justify-center items-center gap-1.5 focus:outline-none"
+				class="md:hidden relative z-[110] w-8 h-8 flex flex-col justify-center items-center gap-1.5 focus:outline-none transition-transform duration-200 active:scale-95"
 				aria-label="Abrir Menu">
 				<span class="line-1 w-full h-[1px] bg-gold-executive transition-all duration-500"></span>
 				<span class="line-2 w-full h-[1px] bg-gold-executive transition-all duration-500"></span>
@@ -55,14 +84,25 @@
 	<div id="mobile-menu"
 		class="fixed top-0 left-0 w-full h-full z-[100] bg-black/95 backdrop-blur-xl flex flex-col items-center justify-center md:hidden">
 		<nav class="flex flex-col items-center gap-10">
-			<a href="#diferenciais" class="menu-link text-lg tracking-[0.5em] uppercase font-light">Diferenciais</a>
-			<a href="#tarifas" class="menu-link text-lg tracking-[0.5em] uppercase font-light">Tarifas</a>
-			<a href="#localizacao" class="menu-link text-lg tracking-[0.5em] uppercase font-light">Localização</a>
+			<a href="#diferenciais"
+				class="menu-link text-lg tracking-[0.5em] uppercase font-light transition-all duration-300 active:scale-95 active:text-gold-executive">
+				Diferenciais
+			</a>
+
+			<a href="#tarifas"
+				class="menu-link text-lg tracking-[0.5em] uppercase font-light transition-all duration-300 active:scale-95 active:text-gold-executive">
+				Tarifas
+			</a>
+
+			<a href="#localizacao"
+				class="menu-link text-lg tracking-[0.5em] uppercase font-light transition-all duration-300 active:scale-95 active:text-gold-executive">
+				Localização
+			</a>
 
 			<div class="h-px w-12 bg-gold-executive/30 my-4"></div>
 
-			<a href="https://maps.app.goo.gl/i47vkWEp9cX73JQBA" target="_blank"
-				class="text-gold-executive font-serif italic text-2xl tracking-widest">
+			<a href="https://maps.app.goo.gl/i47vkWEp9cX73JQBA" target="_blank" rel="noopener noreferrer"
+				class="text-gold-executive font-serif italic text-2xl tracking-widest transition-all duration-300 active:scale-95 active:brightness-125">
 				Como Chegar
 			</a>
 		</nav>
@@ -103,7 +143,7 @@
 
 					<div class="flex flex-col items-center gap-8">
 
-						<a href="https://maps.app.goo.gl/i47vkWEp9cX73JQBA" target="_blank"
+						<a href="https://maps.app.goo.gl/i47vkWEp9cX73JQBA" target="_blank" rel="noopener noreferrer"
 							class="group relative inline-flex items-center justify-center px-10 py-4 overflow-hidden shadow-2xl transition-transform duration-500 active:scale-95">
 
 							<div
@@ -168,7 +208,7 @@
 								class="w-10 h-10 text-gold-executive fill-current relative z-10 transform transition-transform duration-500 group-hover:scale-110">
 								<use href="/svgs/icons.svg#hand-sparkles"></use>
 							</svg>
-						
+
 							<div
 								class="absolute -inset-4 bg-gold-executive/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 							</div>
@@ -387,27 +427,30 @@
 
 				<div class="mt-20 flex items-center justify-center w-full">
 					<div class="flex items-center justify-center w-full max-w-5xl px-6">
-				
-						<div class="hidden md:block flex-1 h-px bg-gradient-to-r from-transparent to-gold-executive/30"></div>
-				
+
+						<div class="hidden md:block flex-1 h-px bg-gradient-to-r from-transparent to-gold-executive/30">
+						</div>
+
 						<div class="flex items-center gap-6 px-0 md:px-12 shrink-0">
 							<svg class="w-14 h-14 md:w-16 md:h-16 text-gold-executive fill-current shrink-0">
 								<use href="/svgs/icons.svg#clock-2"></use>
 							</svg>
-				
+
 							<div class="flex flex-col text-left">
 								<h3
 									class="font-serif text-2xl md:text-3xl text-gold-light tracking-[0.2em] uppercase leading-none mb-2">
 									Pernoite
 								</h3>
-								<p class="text-gray-400 font-sans text-[12px] md:text-sm tracking-[0.3em] uppercase font-light">
+								<p
+									class="text-gray-400 font-sans text-[12px] md:text-sm tracking-[0.3em] uppercase font-light">
 									Das 21h às 10h
 								</p>
 							</div>
 						</div>
-				
-						<div class="hidden md:block flex-1 h-px bg-gradient-to-l from-transparent to-gold-executive/30"></div>
-				
+
+						<div class="hidden md:block flex-1 h-px bg-gradient-to-l from-transparent to-gold-executive/30">
+						</div>
+
 					</div>
 				</div>
 
@@ -422,9 +465,10 @@
 			<div class="container mx-auto px-6 grid md:grid-cols-3 gap-16 md:gap-0 text-center">
 
 				<div class="group flex flex-col items-center px-6 md:border-r border-gold-executive/10">
-					<svg class="w-8 h-8 text-gold-executive mb-6 fill-current transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
-        				<use href="/svgs/icons.svg#calendar-xmark"></use>
-    				</svg>
+					<svg
+						class="w-8 h-8 text-gold-executive mb-6 fill-current transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+						<use href="/svgs/icons.svg#calendar-xmark"></use>
+					</svg>
 					<h4
 						class="font-serif text-lg font-bold mb-3 uppercase tracking-[0.2em] text-white group-hover:text-gold-light transition-colors duration-500">
 						Sem Burocracia</h4>
@@ -434,9 +478,10 @@
 				</div>
 
 				<div class="group flex flex-col items-center px-6 md:border-r border-gold-executive/10">
-					<svg class="w-8 h-8 text-gold-executive mb-6 fill-current transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
-        				<use href="/svgs/icons.svg#moon"></use>
-    				</svg>
+					<svg
+						class="w-8 h-8 text-gold-executive mb-6 fill-current transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+						<use href="/svgs/icons.svg#moon"></use>
+					</svg>
 					<h4
 						class="font-serif text-lg font-bold mb-3 uppercase tracking-[0.2em] text-white group-hover:text-gold-light transition-colors duration-500">
 						Pernoite</h4>
@@ -446,9 +491,10 @@
 				</div>
 
 				<div class="group flex flex-col items-center px-6">
-					<svg class="w-8 h-8 text-gold-executive mb-6 fill-current transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
-        				<use href="/svgs/icons.svg#clock"></use>
-    				</svg>
+					<svg
+						class="w-8 h-8 text-gold-executive mb-6 fill-current transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+						<use href="/svgs/icons.svg#clock"></use>
+					</svg>
 					<h4
 						class="font-serif text-lg font-bold mb-3 uppercase tracking-[0.2em] text-white group-hover:text-gold-light transition-colors duration-500">
 						Atendimento 24h</h4>
@@ -496,8 +542,8 @@
 						</p>
 
 						<a href="https://www.google.com/maps/dir//R.+Boquira,+2+-+Jardim+das+Margaridas,+Salvador+-+BA,+41502-345"
-							target="_blank"
-							class="inline-flex items-center gap-5 border border-gold-executive/40 text-gold-executive py-5 px-10 font-sans text-sm font-bold uppercase tracking-[0.3em] hover:bg-gold-executive hover:text-black transition-all duration-500 group shadow-xl">
+							target="_blank" rel="noopener noreferrer"
+							class="inline-flex items-center gap-5 border border-gold-executive/40 text-gold-executive py-5 px-10 font-sans text-sm font-bold uppercase tracking-[0.3em] hover:bg-gold-executive hover:text-black transition-all active:scale-95 duration-500 group shadow-xl">
 							Abrir no GPS
 							<svg
 								class="w-4 h-4 fill-current transform transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1">
@@ -539,7 +585,7 @@
 
 			<div class="flex flex-col items-center gap-4 mb-16">
 				<div class="flex flex-col items-center gap-4 mb-16">
-					<a href="https://instagram.com/driveinboxexecutive" target="_blank"
+					<a href="https://instagram.com/driveinboxexecutive" target="_blank" rel="noopener noreferrer"
 						class="group flex flex-col items-center gap-3 transition-all duration-500">
 
 						<div
