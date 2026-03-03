@@ -92,10 +92,6 @@ body {
     background-size: 200% 200%;
 }
 
-iframe {
-    filter: grayscale(1) invert(0.9) contrast(1.2);
-}
-
 .reveal {
     opacity: 0;
     transform: translateY(30px);
