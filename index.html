@@ -8,7 +8,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="icon" type="image/png" href="/favicon.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="selection:bg-gold-executive selection:text-black">
@@ -114,8 +113,10 @@
 							<span
 								class="relative z-10 flex items-center gap-3 font-sans text-[11px] font-bold uppercase tracking-[0.3em] text-black">
 								Como chegar agora
-								<i
-									class="fa-solid fa-location-arrow text-[10px] transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+								<svg
+									class="w-[11px] h-[11px] transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1 fill-current">
+									<use href="/svgs/icons.svg#location-arrow"></use>
+								</svg>
 							</span>
 						</a>
 
@@ -163,8 +164,11 @@
 					<div
 						class="bg-[#0a0a0a] p-10 flex flex-col items-center text-center group hover:bg-[#0f0f0f] transition-colors duration-500">
 						<div class="mb-8 relative">
-							<i
-								class="fa-solid fa-wind text-4xl text-gold-executive transform transition-transform duration-500 group-hover:scale-110"></i>
+							<svg
+								class="w-10 h-10 text-gold-executive fill-current relative z-10 transform transition-transform duration-500 group-hover:scale-110">
+								<use href="/svgs/icons.svg#hand-sparkles"></use>
+							</svg>
+						
 							<div
 								class="absolute -inset-4 bg-gold-executive/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 							</div>
@@ -180,8 +184,10 @@
 					<div
 						class="bg-[#0a0a0a] p-10 flex flex-col items-center text-center group hover:bg-[#0f0f0f] transition-colors duration-500">
 						<div class="mb-8 relative">
-							<i
-								class="fa-solid fa-location-crosshairs text-4xl text-gold-executive transform transition-transform duration-500 group-hover:scale-110"></i>
+							<svg
+								class="w-10 h-10 text-gold-executive fill-current relative z-10 transform transition-transform duration-500 group-hover:scale-110">
+								<use href="/svgs/icons.svg#map-location"></use>
+							</svg>
 							<div
 								class="absolute -inset-4 bg-gold-executive/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 							</div>
@@ -197,8 +203,10 @@
 					<div
 						class="bg-[#0a0a0a] p-10 flex flex-col items-center text-center group hover:bg-[#0f0f0f] transition-colors duration-500">
 						<div class="mb-8 relative">
-							<i
-								class="fa-solid fa-bed text-4xl text-gold-executive transform transition-transform duration-500 group-hover:scale-110"></i>
+							<svg
+								class="w-10 h-10 text-gold-executive fill-current relative z-10 transform transition-transform duration-500 group-hover:scale-110">
+								<use href="/svgs/icons.svg#bed"></use>
+							</svg>
 							<div
 								class="absolute -inset-4 bg-gold-executive/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 							</div>
@@ -214,8 +222,10 @@
 					<div
 						class="bg-[#0a0a0a] p-10 flex flex-col items-center text-center group hover:bg-[#0f0f0f] transition-colors duration-500">
 						<div class="mb-8 relative">
-							<i
-								class="fa-solid fa-user-shield text-4xl text-gold-executive transform transition-transform duration-500 group-hover:scale-110"></i>
+							<svg
+								class="w-10 h-10 text-gold-executive fill-current relative z-10 transform transition-transform duration-500 group-hover:scale-110">
+								<use href="/svgs/icons.svg#mask"></use>
+							</svg>
 							<div
 								class="absolute -inset-4 bg-gold-executive/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
 							</div>
@@ -375,6 +385,32 @@
 					</div>
 				</div>
 
+				<div class="mt-20 flex items-center justify-center w-full">
+					<div class="flex items-center justify-center w-full max-w-5xl px-6">
+				
+						<div class="hidden md:block flex-1 h-px bg-gradient-to-r from-transparent to-gold-executive/30"></div>
+				
+						<div class="flex items-center gap-6 px-0 md:px-12 shrink-0">
+							<svg class="w-14 h-14 md:w-16 md:h-16 text-gold-executive fill-current shrink-0">
+								<use href="/svgs/icons.svg#clock-2"></use>
+							</svg>
+				
+							<div class="flex flex-col text-left">
+								<h3
+									class="font-serif text-2xl md:text-3xl text-gold-light tracking-[0.2em] uppercase leading-none mb-2">
+									Pernoite
+								</h3>
+								<p class="text-gray-400 font-sans text-[12px] md:text-sm tracking-[0.3em] uppercase font-light">
+									Das 21h às 10h
+								</p>
+							</div>
+						</div>
+				
+						<div class="hidden md:block flex-1 h-px bg-gradient-to-l from-transparent to-gold-executive/30"></div>
+				
+					</div>
+				</div>
+
 				<div class="text-center mt-12 text-[16px] text-gray-600 uppercase tracking-widest leading-relaxed">
 					Consulte Condições Adicionais.<br>Preços sujeitos a alterações sem aviso prévio.
 				</div>
@@ -386,8 +422,9 @@
 			<div class="container mx-auto px-6 grid md:grid-cols-3 gap-16 md:gap-0 text-center">
 
 				<div class="group flex flex-col items-center px-6 md:border-r border-gold-executive/10">
-					<i
-						class="fa-solid fa-calendar-xmark text-3xl text-gold-executive mb-6 transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1"></i>
+					<svg class="w-8 h-8 text-gold-executive mb-6 fill-current transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+        				<use href="/svgs/icons.svg#calendar-xmark"></use>
+    				</svg>
 					<h4
 						class="font-serif text-lg font-bold mb-3 uppercase tracking-[0.2em] text-white group-hover:text-gold-light transition-colors duration-500">
 						Sem Burocracia</h4>
@@ -397,8 +434,9 @@
 				</div>
 
 				<div class="group flex flex-col items-center px-6 md:border-r border-gold-executive/10">
-					<i
-						class="fa-solid fa-moon text-3xl text-gold-executive mb-6 transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1"></i>
+					<svg class="w-8 h-8 text-gold-executive mb-6 fill-current transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+        				<use href="/svgs/icons.svg#moon"></use>
+    				</svg>
 					<h4
 						class="font-serif text-lg font-bold mb-3 uppercase tracking-[0.2em] text-white group-hover:text-gold-light transition-colors duration-500">
 						Pernoite</h4>
@@ -408,8 +446,9 @@
 				</div>
 
 				<div class="group flex flex-col items-center px-6">
-					<i
-						class="fa-solid fa-clock text-3xl text-gold-executive mb-6 transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1"></i>
+					<svg class="w-8 h-8 text-gold-executive mb-6 fill-current transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+        				<use href="/svgs/icons.svg#clock"></use>
+    				</svg>
 					<h4
 						class="font-serif text-lg font-bold mb-3 uppercase tracking-[0.2em] text-white group-hover:text-gold-light transition-colors duration-500">
 						Atendimento 24h</h4>
@@ -460,8 +499,10 @@
 							target="_blank"
 							class="inline-flex items-center gap-5 border border-gold-executive/40 text-gold-executive py-5 px-10 font-sans text-sm font-bold uppercase tracking-[0.3em] hover:bg-gold-executive hover:text-black transition-all duration-500 group shadow-xl">
 							Abrir no GPS
-							<i
-								class="fa-solid fa-location-arrow text-sm transform transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+							<svg
+								class="w-4 h-4 fill-current transform transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1">
+								<use href="/svgs/icons.svg#location-arrow"></use>
+							</svg>
 						</a>
 					</div>
 
@@ -503,8 +544,9 @@
 
 						<div
 							class="w-12 h-12 rounded-full border border-gold-executive/20 flex items-center justify-center group-hover:border-gold-executive group-hover:bg-gold-executive/5 transition-all duration-500 overflow-hidden">
-							<i
-								class="fa-brands fa-instagram text-xl text-gold-executive leading-none -ml-[1px] mt-[1px]"></i>
+							<svg class="w-5 h-5 text-gold-executive fill-current -ml-[1px] mt-[1px]">
+								<use href="/svgs/icons.svg#instagram"></use>
+							</svg>
 						</div>
 
 						<span
