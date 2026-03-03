@@ -121,7 +121,7 @@
 			<div class="container mx-auto px-6 relative z-10">
 				<div class="max-w-4xl mx-auto text-center flex flex-col items-center">
 
-					<div class="flex items-center justify-center gap-4 mb-6 opacity-70">
+					<div class="flex items-center justify-center gap-2 mb-6 opacity-70">
 						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
 						<span
 							class="text-[var(--color-gold-light-2)] font-serif italic tracking-[0.3em] text-[16px] uppercase">
@@ -130,9 +130,9 @@
 						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
 					</div>
 
-					<h1 class="text-4xl md:text-7xl font-serif font-bold mb-6 leading-tight tracking-tight">
+					<h1 class="text-4xl md:text-7xl font-serif font-bold mb-6 leading-[1] tracking-tight pb-5">
 						O seu momento de <br>
-						<span class="text-gold-metallic italic font-light">descanso</span> e intimidade.
+						<span class="text-gold-metallic">descanso</span> e intimidade.
 					</h1>
 
 					<p
@@ -301,156 +301,101 @@
 						</span>
 						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
 					</div>
-					<h2 class="text-4xl md:text-6xl font-serif font-bold text-white tracking-wide">
+					<h2 class="text-4xl md:text-6xl font-serif font-bold text-white tracking-wide leading-tight pb-2">
 						<span class="text-gold-metallic">Preços</span> Exclusive
 					</h2>
-					<p class="text-gray-400 mt-6 font-serif text-lg opacity-80">Nossos valores e modalidades de
+					<p class="text-gray-400 mt-6 font-serif text-[20px] opacity-80">Nossos valores e modalidades de
 						hospedagem</p>
 				</div>
 
-				<div
-					class="hidden md:block w-full border border-gold-executive/30 bg-[#0a0a0a] shadow-[0_0_60px_rgba(187,152,80,0.1)]">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+
 					<div
-						class="grid grid-cols-5 border-b border-gold-executive/30 font-sans text-[12px] uppercase tracking-[0.2em] text-gold-light">
-						<div class="p-6 border-r border-gold-executive/30 font-semibold text-center">Suítes</div>
-						<div class="p-6 border-r border-gold-executive/30 font-semibold text-center">2 Horas</div>
-						<div class="p-6 border-r border-gold-executive/30 font-semibold text-center">4 Horas</div>
-						<div class="p-6 border-r border-gold-executive/30 font-semibold text-center">Pernoite</div>
-						<div class="p-6 font-semibold text-center">Hora Adicional</div>
+						class="border border-gold-executive/30 bg-[#0a0a0a] p-8 md:p-10 shadow-2xl hover:border-gold-executive/60 transition-all duration-500 group">
+						<h3
+							class="font-serif text-2xl md:text-3xl text-gold-light border-b border-gold-executive/20 pb-6 mb-8 text-center group-hover:text-white transition-colors">
+							Suíte Luxo
+						</h3>
+						<div class="grid grid-cols-2 gap-y-6 text-sm uppercase tracking-widest">
+							<span class="text-gray-500">2 Horas</span>
+							<span class="text-right text-white font-bold">R$ 89,90</span>
+
+							<span class="text-gray-500">4 Horas</span>
+							<span class="text-right text-white font-bold">R$ 109,90</span>
+
+							<span class="text-gold-executive font-medium italic">Pernoite</span>
+							<span class="text-right text-gold-executive font-bold">R$ 129,90</span>
+
+							<span class="text-gray-500 text-[14px] mt-4">Hora Adicional</span>
+							<span class="text-right text-white/50 mt-4">R$ 25,00</span>
+						</div>
 					</div>
 
 					<div
-						class="grid grid-cols-5 border-b border-gold-executive/15 hover:bg-gold-executive/5 transition-colors group">
-						<div
-							class="p-6 border-r border-gold-executive/15 font-serif text-lg text-white group-hover:text-gold-light flex items-center justify-center text-center">
-							Suíte Luxo</div>
-						<div
-							class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 89,90</div>
-						<div
-							class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 109,90</div>
-						<div
-							class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 129,90</div>
-						<div
-							class="p-6 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 25,00</div>
+						class="border border-gold-executive/30 bg-[#0a0a0a] p-8 md:p-10 shadow-2xl hover:border-gold-executive/60 transition-all duration-500 group relative">
+						<div class="absolute -top-px left-1/2 -translate-x-1/2 w-32 h-px bg-gold-executive"></div>
+
+						<h3
+							class="font-serif text-2xl md:text-3xl text-gold-light border-b border-gold-executive/20 pb-6 mb-8 text-center group-hover:text-white transition-colors">
+							Suíte com Hidro
+						</h3>
+						<div class="grid grid-cols-2 gap-y-6 text-sm uppercase tracking-widest">
+							<span class="text-gray-500">2 Horas</span>
+							<span class="text-right text-white font-bold">R$ 129,90</span>
+
+							<span class="text-gray-500">4 Horas</span>
+							<span class="text-right text-white font-bold">R$ 149,90</span>
+
+							<span class="text-gold-executive font-medium italic">Pernoite</span>
+							<span class="text-right text-gold-executive font-bold">R$ 169,90</span>
+
+							<span class="text-gray-500 text-[14px] mt-4">Hora Adicional</span>
+							<span class="text-right text-white/50 mt-4">R$ 39,00</span>
+						</div>
 					</div>
 
 					<div
-						class="grid grid-cols-5 border-b border-gold-executive/15 hover:bg-gold-executive/5 transition-colors group">
-						<div
-							class="p-6 border-r border-gold-executive/15 font-serif text-lg text-white group-hover:text-gold-light flex items-center justify-center text-center">
-							Suíte com Hidro</div>
-						<div
-							class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 129,90</div>
-						<div
-							class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 149,90</div>
-						<div
-							class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 169,90</div>
-						<div
-							class="p-6 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 39,00</div>
+						class="border border-gold-executive/30 bg-[#0a0a0a] p-8 md:p-10 shadow-2xl hover:border-gold-executive/60 transition-all duration-500 group">
+						<h3
+							class="font-serif text-2xl md:text-3xl text-gold-light border-b border-gold-executive/20 pb-6 mb-8 text-center group-hover:text-white transition-colors">
+							Suíte Executive
+						</h3>
+						<div class="grid grid-cols-2 gap-y-6 text-sm uppercase tracking-widest">
+							<span class="text-gray-500">2 Horas</span>
+							<span class="text-right text-white font-bold">R$ 149,90</span>
+
+							<span class="text-gray-500">4 Horas</span>
+							<span class="text-right text-white font-bold">R$ 169,90</span>
+
+							<span class="text-gold-executive font-medium italic">Pernoite</span>
+							<span class="text-right text-gold-executive font-bold">R$ 189,90</span>
+
+							<span class="text-gray-500 text-[14px] mt-4">Hora Adicional</span>
+							<span class="text-right text-white/50 mt-4">R$ 49,00</span>
+						</div>
 					</div>
 
-					<div
-						class="grid grid-cols-5 border-b border-gold-executive/15 hover:bg-gold-executive/5 transition-colors group">
-						<div
-							class="p-6 border-r border-gold-executive/15 font-serif text-lg text-white group-hover:text-gold-light flex items-center justify-center text-center">
-							Suíte Executive</div>
-						<div
-							class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 149,90</div>
-						<div
-							class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 169,90</div>
-						<div
-							class="p-6 border-r border-gold-executive/15 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 189,90</div>
-						<div
-							class="p-6 font-sans text-lg font-bold text-gray-300 group-hover:text-white flex items-center justify-center text-center">
-							R$ 49,00</div>
-					</div>
 				</div>
 
-				<div class="md:hidden space-y-8">
-					<div class="border border-gold-executive/30 bg-[#0a0a0a] p-8 shadow-2xl">
-						<h3
-							class="font-serif text-2xl text-gold-light border-b border-gold-executive/20 pb-4 mb-6 text-center">
-							Suíte Luxo</h3>
-						<div class="grid grid-cols-2 gap-y-5 text-sm uppercase tracking-widest">
-							<span class="text-gray-500">2 Horas</span><span class="text-right text-white font-bold">R$
-								89,90</span>
-							<span class="text-gray-500">4 Horas</span><span class="text-right text-white font-bold">R$
-								109,90</span>
-							<span class="text-gold-executive font-medium italic">Pernoite</span><span
-								class="text-right text-gold-executive font-bold">R$ 129,90</span>
-							<span class="text-gray-500 text-[10px]">Hora Adicional</span><span
-								class="text-right text-white/50">R$ 25,00</span>
-						</div>
-					</div>
-					<div class="border border-gold-executive/30 bg-[#0a0a0a] p-8 shadow-2xl">
-						<h3
-							class="font-serif text-2xl text-gold-light border-b border-gold-executive/20 pb-4 mb-6 text-center">
-							Suíte com Hidro</h3>
-						<div class="grid grid-cols-2 gap-y-5 text-sm uppercase tracking-widest">
-							<span class="text-gray-500">2 Horas</span><span class="text-right text-white font-bold">R$
-								129,90</span>
-							<span class="text-gray-500">4 Horas</span><span class="text-right text-white font-bold">R$
-								149,90</span>
-							<span class="text-gold-executive font-medium italic">Pernoite</span><span
-								class="text-right text-gold-executive font-bold">R$ 169,90</span>
-							<span class="text-gray-500 text-[10px]">Hora Adicional</span><span
-								class="text-right text-white/50">R$ 39,00</span>
-						</div>
-					</div>
-					<div class="border border-gold-executive/30 bg-[#0a0a0a] p-8 shadow-2xl">
-						<h3
-							class="font-serif text-2xl text-gold-light border-b border-gold-executive/20 pb-4 mb-6 text-center">
-							Suíte Executive</h3>
-						<div class="grid grid-cols-2 gap-y-5 text-sm uppercase tracking-widest">
-							<span class="text-gray-500">2 Horas</span><span class="text-right text-white font-bold">R$
-								149,90</span>
-							<span class="text-gray-500">4 Horas</span><span class="text-right text-white font-bold">R$
-								169,90</span>
-							<span class="text-gold-executive font-medium italic">Pernoite</span><span
-								class="text-right text-gold-executive font-bold">R$ 189,90</span>
-							<span class="text-gray-500 text-[10px]">Hora Adicional</span><span
-								class="text-right text-white/50">R$ 49,00</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="mt-20 flex items-center justify-center w-full">
+				<div class="mt-24 flex items-center justify-center w-full">
 					<div class="flex items-center justify-center w-full max-w-5xl px-6">
-
 						<div class="hidden md:block flex-1 h-px bg-gradient-to-r from-transparent to-gold-executive/30">
 						</div>
-
 						<div class="flex items-center gap-6 px-0 md:px-12 shrink-0">
 							<svg class="w-14 h-14 md:w-16 md:h-16 text-gold-executive fill-current shrink-0">
 								<use href="svgs/icons.svg#clock-2"></use>
 							</svg>
-
 							<div class="flex flex-col text-left">
 								<h3
 									class="font-serif text-2xl md:text-3xl text-gold-light tracking-[0.2em] uppercase leading-none mb-2">
-									Pernoite
-								</h3>
+									Pernoite</h3>
 								<p
 									class="text-gray-400 font-sans text-[12px] md:text-sm tracking-[0.3em] uppercase font-light">
-									Das 21h às 10h
-								</p>
+									Das 21h às 10h</p>
 							</div>
 						</div>
-
 						<div class="hidden md:block flex-1 h-px bg-gradient-to-l from-transparent to-gold-executive/30">
 						</div>
-
 					</div>
 				</div>
 
@@ -609,10 +554,10 @@
 			</div>
 
 			<div
-				class="text-gray-500 text-[10px] md:text-xs uppercase tracking-[0.2em] leading-relaxed flex flex-col items-center">
+				class="text-gray-400 text-[10px] md:text-xs uppercase tracking-[0.2em] leading-relaxed flex flex-col items-center">
 
 				<div class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-					<p class="opacity-90 hover:opacity-80 transition-opacity duration-500 cursor-default text-center">
+					<p class="opacity-70 cursor-default text-center">
 						© <span id="current-year"></span> Executive Motel - Todos os direitos reservados.
 					</p>
 
