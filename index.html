@@ -406,6 +406,138 @@
 			</div>
 		</section>
 
+		<section id="galeria" class="py-32 md:py-48 bg-black relative overflow-hidden">
+			<div class="container mx-auto px-6 relative z-10">
+
+				<div class="text-center mb-16">
+					<div class="flex items-center justify-center gap-4 mb-4 opacity-70">
+						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
+						<span
+							class="text-[var(--color-gold-light-2)] font-serif italic tracking-[0.3em] text-[16px] uppercase">
+							Experiência Visual
+						</span>
+						<div class="h-px w-8 bg-[var(--color-gold-light-2)]"></div>
+					</div>
+
+					<h2 class="text-4xl md:text-6xl font-serif font-bold text-white tracking-wide leading-tight pb-2">
+						Conheça as <span class="text-gold-metallic inline-block py-2">Suítes</span>
+					</h2>
+				</div>
+
+				<div
+					class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 border border-white/10 overflow-hidden shadow-2xl">
+
+					<div class="gallery-trigger relative aspect-[3/2] group overflow-hidden cursor-pointer bg-black"
+						data-suite="Suíte Luxo">
+						<img src="gallery/thumbnail/suite-luxo.webp" alt="Suíte Luxo"
+							class="w-full h-full object-cover brightness-75 transition-all duration-700 group-hover:scale-105 group-hover:brightness-50"
+							loading="lazy">
+						<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+							<span
+								class="text-xl md:text-2xl text-white font-serif italic tracking-widest mb-2 group-hover:text-gold-executive transition-colors">Suíte
+								Luxo</span>
+							<span
+								class="text-[10px] text-white/40 uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">Ver
+								fotos</span>
+						</div>
+					</div>
+
+					<div class="gallery-trigger relative aspect-[3/2] group overflow-hidden cursor-pointer bg-black"
+						data-suite="Suíte com Hidro">
+						<img src="gallery/thumbnail/suite-com-hidro.webp" alt="Suíte Hidro"
+							class="w-full h-full object-cover brightness-75 transition-all duration-700 group-hover:scale-105 group-hover:brightness-50"
+							loading="lazy">
+						<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+							<span
+								class="text-xl md:text-2xl text-white font-serif italic tracking-widest mb-2 group-hover:text-gold-executive transition-colors">Suíte
+								Hidro</span>
+							<span
+								class="text-[10px] text-white/40 uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">Ver
+								fotos</span>
+						</div>
+					</div>
+
+					<div class="gallery-trigger relative aspect-[3/2] group overflow-hidden cursor-pointer bg-black"
+						data-suite="Suíte Executive">
+						<img src="gallery/thumbnail/suite-executive.webp" alt="Suíte Executive"
+							class="w-full h-full object-cover brightness-75 transition-all duration-700 group-hover:scale-105 group-hover:brightness-50"
+							loading="lazy">
+						<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+							<span
+								class="text-xl md:text-2xl text-white font-serif italic tracking-widest mb-2 group-hover:text-gold-executive transition-colors">Suíte
+								Executive</span>
+							<span
+								class="text-[10px] text-white/40 uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">Ver
+								fotos</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<div id="gallery-modal"
+			class="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-black/98 backdrop-blur-2xl hidden opacity-0 transition-opacity duration-300">
+
+			<nav
+				class="absolute top-0 left-0 w-full flex items-center justify-between px-6 py-8 md:px-12 z-[210] border-b border-white/5 bg-black/50 backdrop-blur-md">
+
+				<div class="flex flex-col">
+					<h3 id="gallery-suite-title"
+						class="text-gold-executive font-serif text-lg md:text-xl tracking-[0.2em] uppercase leading-none">
+						Nome da Suíte
+					</h3>
+					<div class="font-sans text-[12px] uppercase tracking-[0.4em] text-white/30 mt-2">
+						<span id="gallery-counter" class="text-white">1</span> / <span id="gallery-total">0</span>
+					</div>
+				</div>
+
+				<div class="flex items-center gap-2 md:gap-4">
+					<button id="prev-gallery"
+						class="text-white/40 hover:text-gold-executive transition-colors p-2 md:p-3 cursor-pointer group"
+						aria-label="Anterior">
+						<svg
+							class="w-6 h-6 md:w-8 md:h-8 fill-current transform rotate-180 pointer-events-none transition-transform group-active:scale-90">
+							<use href="svgs/icons.svg#chevron-right"></use>
+						</svg>
+					</button>
+
+					<button id="next-gallery"
+						class="text-white/40 hover:text-gold-executive transition-colors p-2 md:p-3 cursor-pointer group"
+						aria-label="Próxima">
+						<svg
+							class="w-6 h-6 md:w-8 md:h-8 fill-current pointer-events-none transition-transform group-active:scale-90">
+							<use href="svgs/icons.svg#chevron-right"></use>
+						</svg>
+					</button>
+
+					<div class="w-px h-6 bg-white/10 mx-1"></div>
+
+					<button id="close-gallery"
+						class="text-white/40 hover:text-gold-executive transition-colors p-2 md:p-3 cursor-pointer group"
+						aria-label="Fechar galeria">
+						<svg
+							class="w-6 h-6 md:w-8 md:h-8 fill-current pointer-events-none transition-transform group-active:scale-90">
+							<use href="svgs/icons.svg#xmark"></use>
+						</svg>
+					</button>
+				</div>
+			</nav>
+
+			<div class="relative w-full max-w-5xl px-4 flex items-center justify-center mt-20">
+				<div class="relative flex items-center justify-center min-h-[300px] w-full">
+					<div id="gallery-loader" class="absolute inset-0 flex items-center justify-center hidden">
+						<div
+							class="w-12 h-12 border-4 border-gold-executive/20 border-t-gold-executive rounded-full animate-spin">
+						</div>
+					</div>
+
+					<img id="gallery-image" src="" alt="Galeria Executive"
+						class="max-h-[65vh] md:max-h-[75vh] max-w-full object-contain shadow-[0_0_100px_rgba(0,0,0,0.8)] transition-opacity duration-300 opacity-0">
+				</div>
+			</div>
+		</div>
+
 		<section class="py-32 md:py-40 bg-[#0a0a0a] border-y border-gold-executive/10 relative z-10">
 			<div class="container mx-auto px-6 grid md:grid-cols-3 gap-16 md:gap-0 text-center">
 
@@ -531,7 +663,7 @@
 
 			<div class="flex flex-col items-center gap-4 mb-16">
 				<div class="flex flex-col items-center gap-4 mb-16">
-					<a href="https://instagram.com/driveinboxexecutive" target="_blank" rel="noopener noreferrer"
+					<a href="https://www.instagram.com/executivemoteloficial/" target="_blank" rel="noopener noreferrer"
 						class="group flex flex-col items-center gap-3 transition-all duration-500">
 
 						<div
@@ -543,7 +675,7 @@
 
 						<span
 							class="text-gray-400 text-sm tracking-[0.2em] uppercase group-hover:text-gold-light transition-colors">
-							@driveinboxexecutive
+							@executivemoteloficial
 						</span>
 					</a>
 				</div>
@@ -576,6 +708,7 @@
 	</footer>
 
 	<script type="module" src="src/main.js"></script>
+	<script type="module" src="src/gallery.js"></script>
 	<script src="https://vmoode.com/scripts/badge.js" async></script>
 
 </body>
