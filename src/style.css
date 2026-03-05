@@ -142,22 +142,3 @@ body.menu-open {
     background: #BB9850; 
     box-shadow: 0 0 10px rgba(187, 152, 80, 0.4);
 }
-
-.gallery-image-wrapper {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#gallery-image {
-    max-width: 100% !important;
-    height: auto;
-    object-fit: contain;
-}
-
-#gallery-modal {
-    overflow-x: hidden;
-}

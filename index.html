@@ -541,16 +541,15 @@
 
 			<div class="relative w-full max-w-5xl px-4 flex items-center justify-center mt-16 md:mt-20">
 				<div
-					class="gallery-image-wrapper relative flex items-center justify-center min-h-[150px] md:min-h-[300px] w-full">
-
+					class="gallery-image-wrapper relative flex items-center justify-center min-h-[150px] md:min-h-[300px] w-full overflow-hidden">
+				
 					<div id="gallery-loader" class="absolute inset-0 flex items-center justify-center hidden z-50">
-						<div
-							class="w-12 h-12 border-4 border-gold-executive/20 border-t-gold-executive rounded-full animate-spin">
+						<div class="w-12 h-12 border-4 border-gold-executive/20 border-t-gold-executive rounded-full animate-spin">
 						</div>
 					</div>
-
+				
 					<img id="gallery-image" src="" alt="Galeria Executive"
-						class="max-h-[65vh] md:max-h-[75vh] shadow-[0_0_100px_rgba(0,0,0,0.8)] transition-opacity duration-300 opacity-0">
+						class="max-w-full object-contain max-h-[65vh] md:max-h-[75vh] shadow-[0_0_100px_rgba(0,0,0,0.8)] transition-opacity duration-300 opacity-0">
 				</div>
 			</div>
 
