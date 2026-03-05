@@ -168,11 +168,15 @@ function toggleZoom() {
     const wrapper = mainImage.parentElement;
     const container = wrapper.parentElement;
     const navHeight = modal.querySelector('nav').offsetHeight;
+    const viewportHeight = window.innerHeight;
 
     if (isZoomed) {
+        modal.classList.remove('justify-center');
+        modal.classList.add('justify-start');
+        modal.style.setProperty('overflow-y', 'hidden', 'important');
+
         container.classList.remove('max-w-5xl', 'px-4', 'mt-16', 'md:mt-20');
         container.classList.add('max-w-full');
-        
         container.style.setProperty('margin-top', `${navHeight}px`, 'important');
 
         mainImage.style.setProperty('max-height', 'none', 'important');
@@ -185,7 +189,7 @@ function toggleZoom() {
         wrapper.style.setProperty('overflow-y', 'auto', 'important');
         wrapper.style.setProperty('overflow-x', 'hidden', 'important');
         wrapper.style.setProperty('display', 'block', 'important');
-        wrapper.style.setProperty('max-height', `calc(100vh - ${navHeight}px)`, 'important');
+        wrapper.style.setProperty('max-height', `${viewportHeight - navHeight}px`, 'important');
     } else {
         resetZoom();
     }
@@ -196,9 +200,12 @@ function resetZoom() {
     const wrapper = mainImage.parentElement;
     const container = wrapper.parentElement;
 
+    modal.classList.add('justify-center');
+    modal.classList.remove('justify-start');
+    modal.style.removeProperty('overflow-y');
+
     container.classList.add('max-w-5xl', 'px-4', 'mt-16', 'md:mt-20');
     container.classList.remove('max-w-full');
-    
     container.style.removeProperty('margin-top');
 
     mainImage.style.removeProperty('max-height');
