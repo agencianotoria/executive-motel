@@ -183,12 +183,13 @@ function toggleZoom() {
         mainImage.style.setProperty('max-width', '100%', 'important');
         mainImage.style.setProperty('width', 'auto', 'important');
         mainImage.style.setProperty('height', 'auto', 'important');
-        mainImage.style.setProperty('margin', '0 auto', 'important');
+        mainImage.style.setProperty('margin', 'auto', 'important');
         mainImage.style.setProperty('cursor', 'zoom-out', 'important');
 
         wrapper.style.setProperty('overflow-y', 'auto', 'important');
         wrapper.style.setProperty('overflow-x', 'hidden', 'important');
-        wrapper.style.setProperty('display', 'block', 'important');
+        wrapper.style.setProperty('display', 'flex', 'important');
+        wrapper.style.setProperty('min-height', `${viewportHeight - navHeight}px`, 'important');
         wrapper.style.setProperty('max-height', `${viewportHeight - navHeight}px`, 'important');
     } else {
         resetZoom();
@@ -218,6 +219,7 @@ function resetZoom() {
     wrapper.style.removeProperty('overflow-y');
     wrapper.style.removeProperty('overflow-x');
     wrapper.style.removeProperty('display');
+    wrapper.style.removeProperty('min-height');
     wrapper.style.removeProperty('max-height');
 }
 

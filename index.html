@@ -43,7 +43,8 @@
 		class="fixed top-0 left-0 w-full z-[110] py-2 bg-black/40 backdrop-blur-md transition-all duration-500">
 		<div class="container mx-auto px-6 flex justify-between items-center">
 
-			<nav class="hidden md:flex flex-1 gap-10 text-[12px] uppercase tracking-[0.4em] font-medium text-gray-400">
+			<nav
+				class="hidden md:flex flex-1 gap-4 lg:gap-10 text-[10px] lg:text-[12px] uppercase tracking-[0.2em] lg:tracking-[0.4em] font-medium text-gray-400">
 				<a href="#diferenciais"
 					class="hover:text-gold-executive transition-all duration-300 active:scale-95">Diferenciais</a>
 				<a href="#tarifas"
@@ -62,11 +63,11 @@
 				</a>
 			</div>
 
-			<nav class="hidden md:flex flex-1 justify-end gap-10 items-center">
+			<nav class="hidden md:flex flex-1 justify-end gap-4 lg:gap-10 items-center">
 				<a href="#localizacao"
-					class="text-[12px] uppercase tracking-[0.4em] font-medium text-gray-400 hover:text-gold-executive transition-all duration-300 active:scale-95">Localização</a>
+					class="text-[10px] lg:text-[12px] uppercase tracking-[0.2em] lg:tracking-[0.4em] font-medium text-gray-400 hover:text-gold-executive transition-all duration-300 active:scale-95">Localização</a>
 				<a href="https://maps.app.goo.gl/i47vkWEp9cX73JQBA" target="_blank" rel="noopener noreferrer"
-					class="border border-gold-executive/30 px-6 py-2.5 text-[10px] uppercase tracking-[0.3em] font-semibold text-gold-executive hover:bg-gold-executive hover:text-black transition-all active:scale-95 duration-500">Como
+					class="border border-gold-executive/30 px-3 lg:px-6 py-2 lg:py-2.5 text-[9px] lg:text-[10px] uppercase tracking-[0.15em] lg:tracking-[0.3em] font-semibold text-gold-executive hover:bg-gold-executive hover:text-black transition-all active:scale-95 duration-500">Como
 					Chegar</a>
 			</nav>
 
@@ -92,6 +93,11 @@
 			<a href="#tarifas"
 				class="menu-link text-lg tracking-[0.5em] uppercase font-light transition-all duration-300 active:scale-95 active:text-gold-executive">
 				Tarifas
+			</a>
+
+			<a href="#galeria"
+				class="menu-link text-lg tracking-[0.5em] uppercase font-light transition-all duration-300 active:scale-95 active:text-gold-executive">
+				Galeria
 			</a>
 
 			<a href="#localizacao"
@@ -542,12 +548,13 @@
 			<div class="relative w-full max-w-5xl px-4 flex items-center justify-center mt-16 md:mt-20">
 				<div
 					class="gallery-image-wrapper relative flex items-center justify-center min-h-[150px] md:min-h-[300px] w-full overflow-hidden">
-				
+
 					<div id="gallery-loader" class="absolute inset-0 flex items-center justify-center hidden z-50">
-						<div class="w-12 h-12 border-4 border-gold-executive/20 border-t-gold-executive rounded-full animate-spin">
+						<div
+							class="w-12 h-12 border-4 border-gold-executive/20 border-t-gold-executive rounded-full animate-spin">
 						</div>
 					</div>
-				
+
 					<img id="gallery-image" src="" alt="Galeria Executive"
 						class="max-w-full object-contain max-h-[65vh] md:max-h-[75vh] shadow-[0_0_100px_rgba(0,0,0,0.8)] transition-opacity duration-300 opacity-0">
 				</div>
