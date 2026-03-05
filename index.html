@@ -40,7 +40,7 @@
 <body class="selection:bg-gold-executive selection:text-black">
 
 	<header id="main-header"
-		class="fixed top-0 left-0 w-full z-[110] py-2 border-b border-white/5 bg-black/40 backdrop-blur-md transition-all duration-500">
+		class="fixed top-0 left-0 w-full z-[110] py-2 bg-black/40 backdrop-blur-md transition-all duration-500">
 		<div class="container mx-auto px-6 flex justify-between items-center">
 
 			<nav class="hidden md:flex flex-1 gap-10 text-[12px] uppercase tracking-[0.4em] font-medium text-gray-400">
@@ -437,7 +437,7 @@
 								class="text-xl md:text-2xl text-white font-serif italic tracking-widest mb-2 group-hover:text-gold-executive transition-colors">Suíte
 								Luxo</span>
 							<span
-								class="text-[10px] text-white/40 uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">Ver
+								class="text-[12px] text-white/40 uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">Ver
 								fotos</span>
 						</div>
 					</div>
@@ -452,7 +452,7 @@
 								class="text-xl md:text-2xl text-white font-serif italic tracking-widest mb-2 group-hover:text-gold-executive transition-colors">Suíte
 								Hidro</span>
 							<span
-								class="text-[10px] text-white/40 uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">Ver
+								class="text-[12px] text-white/40 uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">Ver
 								fotos</span>
 						</div>
 					</div>
@@ -467,7 +467,7 @@
 								class="text-xl md:text-2xl text-white font-serif italic tracking-widest mb-2 group-hover:text-gold-executive transition-colors">Suíte
 								Executive</span>
 							<span
-								class="text-[10px] text-white/40 uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">Ver
+								class="text-[12px] text-white/40 uppercase tracking-[0.4em] opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">Ver
 								fotos</span>
 						</div>
 					</div>
@@ -480,19 +480,28 @@
 			class="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-black/98 backdrop-blur-2xl hidden opacity-0 transition-opacity duration-300">
 
 			<nav
-				class="absolute top-0 left-0 w-full flex items-center justify-between px-6 py-8 md:px-12 z-[210] border-b border-white/5 bg-black/50 backdrop-blur-md">
+				class="absolute top-0 left-0 w-full flex items-center justify-between px-6 py-4 md:py-8 md:px-12 z-[210] border-b border-white/5 bg-black/50 backdrop-blur-md">
 
 				<div class="flex flex-col">
 					<h3 id="gallery-suite-title"
-						class="text-gold-executive font-serif text-lg md:text-xl tracking-[0.2em] uppercase leading-none">
+						class="text-gold-executive font-serif text-lg md:text-3xl tracking-[0.2em] uppercase leading-none">
 						Nome da Suíte
 					</h3>
-					<div class="font-sans text-[12px] uppercase tracking-[0.4em] text-white/30 mt-2">
+					<div class="font-sans text-[14px] uppercase tracking-[0.4em] text-white/30 mt-2">
 						<span id="gallery-counter" class="text-white">1</span> / <span id="gallery-total">0</span>
 					</div>
 				</div>
 
 				<div class="flex items-center gap-2 md:gap-4">
+
+					<button id="zoom-gallery"
+						class="text-white/40 hover:text-gold-executive transition-all p-3 cursor-pointer active:scale-90"
+						aria-label="Ver tamanho original">
+						<svg class="w-6 h-6 md:w-8 md:h-8 fill-current pointer-events-none">
+							<use href="svgs/icons.svg#magnifying-glass"></use>
+						</svg>
+					</button>
+
 					<button id="prev-gallery"
 						class="text-white/40 hover:text-gold-executive transition-colors p-2 md:p-3 cursor-pointer group"
 						aria-label="Anterior">
@@ -514,7 +523,7 @@
 					<div class="w-px h-6 bg-white/10 mx-1"></div>
 
 					<button id="close-gallery"
-						class="text-white/40 hover:text-gold-executive transition-colors p-2 md:p-3 cursor-pointer group"
+						class="text-white/40 hover:text-gold-executive transition-colors cursor-pointer group"
 						aria-label="Fechar galeria">
 						<svg
 							class="w-6 h-6 md:w-8 md:h-8 fill-current pointer-events-none transition-transform group-active:scale-90">
@@ -524,18 +533,21 @@
 				</div>
 			</nav>
 
-			<div class="relative w-full max-w-5xl px-4 flex items-center justify-center mt-20">
-				<div class="relative flex items-center justify-center min-h-[300px] w-full">
-					<div id="gallery-loader" class="absolute inset-0 flex items-center justify-center hidden">
+			<div class="relative w-full max-w-5xl px-4 flex items-center justify-center mt-16 md:mt-20">
+				<div
+					class="gallery-image-wrapper relative flex items-center justify-center min-h-[150px] md:min-h-[300px] w-full">
+
+					<div id="gallery-loader" class="absolute inset-0 flex items-center justify-center hidden z-50">
 						<div
 							class="w-12 h-12 border-4 border-gold-executive/20 border-t-gold-executive rounded-full animate-spin">
 						</div>
 					</div>
 
 					<img id="gallery-image" src="" alt="Galeria Executive"
-						class="max-h-[65vh] md:max-h-[75vh] max-w-full object-contain shadow-[0_0_100px_rgba(0,0,0,0.8)] transition-opacity duration-300 opacity-0">
+						class="max-h-[65vh] md:max-h-[75vh] shadow-[0_0_100px_rgba(0,0,0,0.8)] transition-opacity duration-300 opacity-0">
 				</div>
 			</div>
+
 		</div>
 
 		<section class="py-32 md:py-40 bg-[#0a0a0a] border-y border-gold-executive/10 relative z-10">
