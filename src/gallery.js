@@ -150,6 +150,8 @@ mainImage.addEventListener('touchend', (e) => {
 
 function handleSwipe() {
     if (isZoomed) return;
+    if (window.visualViewport && window.visualViewport.scale > 1) return;
+
     const swipeThreshold = 50;
     
     if (modal.classList.contains('hidden')) return;
