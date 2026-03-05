@@ -1,36 +1,37 @@
 const galleryData = {
     "Suíte Luxo": [
-        "gallery/suite-luxo/MOTEL KORPUS-2-2.webp",
-        "gallery/suite-luxo/MOTEL KORPUS-2-6.webp",
+        //"gallery/suite-luxo/MOTEL KORPUS-2-2.webp",
+        //"gallery/suite-luxo/MOTEL KORPUS-2-6.webp",
         "gallery/suite-luxo/MOTEL KORPUS-2-21.webp",
-        "gallery/suite-luxo/MOTEL KORPUS-2-20.webp",
+        //"gallery/suite-luxo/MOTEL KORPUS-2-20.webp",
         "gallery/suite-luxo/MOTEL KORPUS-2-13.webp",
         "gallery/suite-luxo/MOTEL KORPUS-2-12.webp",
-        "gallery/suite-luxo/MOTEL KORPUS-2-9.webp"
+        //"gallery/suite-luxo/MOTEL KORPUS-2-9.webp",
+        "gallery/suite-luxo/MOTEL KORPUS-2-7.webp", //nova
     ],
     "Suíte com Hidro": [
-        "gallery/suite-com-hidro/MOTEL KORPUS-2-2.webp",
-        "gallery/suite-com-hidro/MOTEL KORPUS-2-9.webp",
+        //"gallery/suite-com-hidro/MOTEL KORPUS-2-2.webp",
+        //"gallery/suite-com-hidro/MOTEL KORPUS-2-9.webp",
         "gallery/suite-com-hidro/MOTEL KORPUS-2-10.webp",
         "gallery/suite-com-hidro/MOTEL KORPUS-2-18.webp",
-        "gallery/suite-com-hidro/MOTEL KORPUS-2-23.webp",
-        "gallery/suite-com-hidro/MOTEL KORPUS-2-24.webp",
+        //"gallery/suite-com-hidro/MOTEL KORPUS-2-23.webp",
+        //"gallery/suite-com-hidro/MOTEL KORPUS-2-24.webp",
         "gallery/suite-com-hidro/MOTEL KORPUS-2-25.webp",
         "gallery/suite-com-hidro/MOTEL KORPUS-2-32.webp",
-        "gallery/suite-com-hidro/MOTEL KORPUS-2-3.webp"
+        //"gallery/suite-com-hidro/MOTEL KORPUS-2-3.webp"
     ],
     "Suíte Executive": [
-        "gallery/suite-executive/MOTEL KORPUS-2-5.webp",
+        //"gallery/suite-executive/MOTEL KORPUS-2-5.webp",
         "gallery/suite-executive/MOTEL KORPUS-2-8.webp",
-        "gallery/suite-executive/MOTEL KORPUS-2-12.webp",
-        "gallery/suite-executive/MOTEL KORPUS-2-14.webp",
+        //"gallery/suite-executive/MOTEL KORPUS-2-12.webp",
+        //"gallery/suite-executive/MOTEL KORPUS-2-14.webp",
         "gallery/suite-executive/MOTEL KORPUS-2-19.webp",
         "gallery/suite-executive/MOTEL KORPUS-2-22.webp",
-        "gallery/suite-executive/MOTEL KORPUS-2-28.webp",
+        //"gallery/suite-executive/MOTEL KORPUS-2-28.webp",
         "gallery/suite-executive/MOTEL KORPUS-2-33.webp",
         "gallery/suite-executive/MOTEL KORPUS-2-41.webp",
         "gallery/suite-executive/MOTEL KORPUS-2-42.webp",
-        "gallery/suite-executive/MOTEL KORPUS-2-16.webp"
+        //"gallery/suite-executive/MOTEL KORPUS-2-16.webp"
     ]
 };
 
